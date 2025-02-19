@@ -1,0 +1,67 @@
+[project]
+name = "drawi-agent"
+version = "0.0.1"
+description = ""
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+dependencies = [
+    "langgraph>=0.2.6",
+    "langchain-openai>=0.1.22",
+    "langchain-anthropic>=0.1.23",
+    "langchain>=0.2.14",
+    "langchain-fireworks>=0.1.7",
+    "python-dotenv>=1.0.1",
+    "langchain-community>=0.2.17",
+    "tavily-python>=0.4.0",
+    "requests-oauthlib>=1.3.1",
+    "tweepy>=4.14.0",
+    "apscheduler>=3.11.0",
+    "langchain-core>=0.3.34",
+    "pymongo>=4.11.1",
+    "solana>=0.36.5",
+    "solders>=0.25.0",
+    "base58>=2.1.1",
+]
+
+
+[project.optional-dependencies]
+dev = ["mypy>=1.11.1", "ruff>=0.6.1"]
+
+[build-system]
+requires = ["setuptools>=73.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["langgraph.templates.drawi", "drawi"]
+[tool.setuptools.package-dir]
+"langgraph.templates.drawi" = "src/drawi"
+"drawi" = "src/drawi"
+
+
+[tool.setuptools.package-data]
+"*" = ["py.typed"]
+
+[tool.ruff]
+lint.select = [
+    "E",    # pycodestyle
+    "F",    # pyflakes
+    "I",    # isort
+    "D",    # pydocstyle
+    "D401", # First line should be in imperative mood
+    "T201",
+    "UP",
+]
+lint.ignore = [
+    "UP006",
+    "UP007",
+    # We actually do want to import from typing_extensions
+    "UP035",
+    # Relax the convention by _not_ requiring documentation for every function parameter.
+    "D417",
+    "E501",
+]
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D", "UP"]
+[tool.ruff.lint.pydocstyle]
+convention = "google"

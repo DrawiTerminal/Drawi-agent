@@ -1,0 +1,10 @@
+tests/
+LICENSE
+Makefile
+README.md
+TECHNICAL.md
+static/
+break_down.md
+.gitignore
+.env.example
+.codespellignore

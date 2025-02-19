@@ -1,0 +1,7 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "./src/drawi/graph.py:graph"
+  },
+  "env": ".env"
+}
