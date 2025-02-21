@@ -14,9 +14,7 @@ RUN pip install --upgrade pip setuptools wheel
 COPY . .
 
 # Install your package and its dependencies directly from pyproject.toml
-# This uses the standard 'setuptools.build_meta' mechanism.
 RUN pip install .
-
 
 # By default, run python. Adjust the entrypoint/command to your own script or module if needed
 CMD ["python", "./src/drawi/run_scheduler.py"]
