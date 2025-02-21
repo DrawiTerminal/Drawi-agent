@@ -2,7 +2,7 @@ interactions:
 - request:
     body: '{"max_tokens": 1024, "messages": [{"role": "user", "content": "Who is the
       founder of LangChain?"}], "model": "claude-3-5-sonnet-20240620", "system": "You
-      are a helpful AI assistant.\n\nSystem time: 2024-11-13T23:50:53.832822+00:00",
+      are a helpful AI assistant\n\nSystem time: 2024-11-13T23:50:53.832822+00:00",
       "tools": [{"name": "search", "description": "Search for general web results.
       This function performs a search using the Tavily search engine, which is designed\nto
       provide comprehensive, accurate, and trusted results. It''s particularly useful\nfor
