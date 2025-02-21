@@ -6,7 +6,7 @@
       <img src="./static/pfp_terminal.png" alt="Drawi Agent Terminal View" width="600" />
     </td>
     <td style="vertical-align: top; padding-left: 20px;">
-      Drawi Agent is a professional automated social media and game management system designed for creating, monitoring, and closing interactive game events on platforms such as Twitter. Leveraging advanced language models and asynchronous task scheduling, Drawi Agent efficiently selects winners from creative contests and maintains a consistent social media presence.
+      Drawi Agent is a professional automated social media and game management system designed for creating, monitoring, and closing interactive game events on platforms such as X. Leveraging advanced language models and asynchronous task scheduling, Drawi Agent efficiently selects winners from creative contests and maintains a consistent social media presence.
     </td>
   </tr>
 </table>
