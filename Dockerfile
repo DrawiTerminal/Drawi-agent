@@ -1,4 +1,4 @@
-# Use the official Python 3.9 slim image as the base
+# Use the official Python 3.12 slim image as the base
 FROM python:3.12-slim
 
 # Create a working directory in the container
